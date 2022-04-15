@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-- contact section -->
+
+<section class="contact_section layout_padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form_container">
+          <div class="heading_container">
+            <h2>Связаться с нами</h2>
+          </div>
+          <form action="">
+            <div>
+              <input type="text" placeholder="Полное имя " />
+            </div>
+            <div>
+              <input type="email" placeholder="Эл.Почта" />
+            </div>
+            <div>
+              <input type="text" placeholder="Телефон" />
+            </div>
+            <div>
+              <input type="text" class="message-box" placeholder="Сообщение" />
+            </div>
+            <div class="d-flex">
+              <button>Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="img-box">
+          <img src="{{ url_for('static', filename='images/contact-img.jpg') }}" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- end contact section -->
+{% endblock %}

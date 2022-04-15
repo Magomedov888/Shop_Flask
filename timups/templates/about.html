@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-- about section -->
+
+<section class="about_section layout_padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-5">
+        <div class="img-box">
+          <img src="{{ url_for('static', filename='images/about-img.png') }}" alt="" />
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-7">
+        <div class="detail-box">
+          <div class="heading_container">
+            <h2>О нас</h2>
+          </div>
+          <p>
+            Timups.ru: за 20 лет мы научили людей ценить время
+            Интернет-магазин Timups.ru уже более 20 лет пользуется заслуженным уважением покупателей по всей России и за ее пределами.
+          </p>
+          <a href=""> Read More </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- end about section -->
+{% endblock %}
